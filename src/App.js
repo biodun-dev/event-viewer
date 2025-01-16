@@ -17,9 +17,9 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const authToken =  'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNTlmNzk1YWEtODJkYS00YWQyLTg5MGUtYWE2M2M1YTRjMDY2IiwiZXhwIjoxNzM3MTMwMTY4fQ.66kpo6Tn54Cc5BPaprmixYGoEoIglUb4qOJGLTd6KOw';
+    const authToken =  'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiOWNlY2RlYmEtMDAyMi00ZjMzLWE4ZGYtNjVjMTliNzA0OGI3IiwiZXhwIjoxNzM3MTQ0NzcxfQ.OONNiTnHdgWFdV0UJkCEtExDybxfU6kwysOnqSwPEos';
 
-    const socket = io("http://localhost:7000", {
+    const socket = io("http://localhost:5000", {
       auth: { token: authToken },
       transports: ["websocket"],
     });
