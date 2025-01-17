@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const authToken =  'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiOGMwY2UyZjEtN2RhMy00Y2FmLTlmZjktYjlkY2EyNWQzNzI4IiwiZXhwIjoxNzM3MTYwODMyfQ.5Uj3nGgg7G-u2pvNzVwgjTZws1YoedtOffloU7V2YKU';
+    const authToken =  'hardcode jwt here ';
 
     const socket = io("http://localhost:5000", {
       auth: { token: authToken },
