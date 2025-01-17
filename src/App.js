@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const authToken =  'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiOWNlY2RlYmEtMDAyMi00ZjMzLWE4ZGYtNjVjMTliNzA0OGI3IiwiZXhwIjoxNzM3MTQ0NzcxfQ.OONNiTnHdgWFdV0UJkCEtExDybxfU6kwysOnqSwPEos';
+    const authToken =  'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiOGMwY2UyZjEtN2RhMy00Y2FmLTlmZjktYjlkY2EyNWQzNzI4IiwiZXhwIjoxNzM3MTYwODMyfQ.5Uj3nGgg7G-u2pvNzVwgjTZws1YoedtOffloU7V2YKU';
 
     const socket = io("http://localhost:5000", {
       auth: { token: authToken },
@@ -46,7 +46,7 @@ function App() {
       "event_created",
       "event_updated",
       "event_deleted",
-      "leaderboard_update",
+      "leaderboard_updated",
     ];
 
     eventTypes.forEach((eventType) => {
